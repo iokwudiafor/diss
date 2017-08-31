@@ -1,0 +1,25 @@
+<%= form_for @profile, url: user_profile_path do |f| %>
+  <div class="form-group">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :fav_artist %>
+    <%= f.text_field :fav_artist, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :fav_genre %>
+    <%= f.text_field :fav_genre, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :bio %>
+    <%= f.text_area :bio, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Update Profile", class: 'btn btn-primary' %>
+  </div>
+<% end %>
