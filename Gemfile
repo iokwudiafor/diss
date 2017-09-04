@@ -13,8 +13,7 @@ gem 'uglifier', '3.0.0'
 gem 'coffee-rails', '4.2.1'
 
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails', '4.1.1'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,10 +38,9 @@ gem 'hirb', '0.7.3'
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
 
-gem 'audiostream', '~> 0.1.12'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 
-#gem 'aws-s3', :require => 'aws/s3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
