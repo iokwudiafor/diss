@@ -1,29 +1,92 @@
-<h1> Play your favorite tracks!</h1>
-
-<section id="audio"> 
-</section>
- 
- $(document).ready(function() {
-    var audioSection = $('section#audio');
-    $('a.music_player').click(function() {
- 
-        var audio = $('<audio>', {
-             controls : 'controls'
-        });
- 
-        var url = $(this).attr('href');
-        $('<source>').attr('src', url).appendTo(audio);
-        audioSection.html(audio);
-        return false;
-        });
-    });
- 
- 
- <table>
-<% @music.each do |song| %>
-    <tr>
-        <td><%= song.key %></td>
-        <td><%= link_to "Your Music", download_url_for(song.key), :class => "music_player" %></td>
-    </tr>
-<% end %>
+<div class="container">
+<h1> Listen to your favorite songs here! Plus many more inside!</h1>
+<table class =" table-bordered table-hover">
+        <thead class="thead-inverse">
+            <tr class="active">
+                <th><p>Song Title</p></th> 
+                <th><p>Artist</p></th>
+                <th><p>Length</p></th>
+            </tr>
+        </thead>
+  
+    <tbody>
+        <tr>
+            <td><p>Weary</p></td>
+            <td><p>Solange</p></td>
+            <td><%= audio_tag "02 Weary.m4a", controls: true%></td>
+        </tr>
+        <tr>
+            <td><p>Let Em' Know</p></td>
+            <td><p>Bryson Tiller</p></td>
+            <td><%= audio_tag "02 Let Em' Know.m4a", controls: true %></td>
+        </tr>
+        <tr>
+           <td><p>Exchange</p></td>
+           <td><p>Bryson Tiller</p></td>
+           <td><%= audio_tag "03 Exchange.m4a", controls: true %></td>
+        </tr>
+        <tr>
+            <td><p>Gravity</p></td>
+            <td><p>John Mayer</p></td>
+            <td><%= audio_tag "gravity.mp3", controls: true%></td>
+        </tr>
+         <tr>
+            <td><p>My Funny Valentine</p></td>
+            <td><p>Miles Davis</p></td>
+            <td><%= audio_tag "My Funny Valentine.mp3", controls: true%></td>
+        </tr>
+         <tr>
+            <td><p>Just Friends</p></td>
+            <td><p>Musiq Soulchild</p></td>
+            <td><%= audio_tag "Just Friends (Sunny).mp3", controls: true%></td>
+        </tr> 
+        <tr>
+            <td><p>Return Of The Mack</p></td>
+            <td><p>Mark Morrison</p></td>
+            <td><%= audio_tag "Mark Morrison - Return Of The Mack.mp3", controls: true%></td>
+        </tr>
+        <tr>
+            <td><p>Lovin' You</p></td>
+            <td><p>Minnie Riperton</p></td>
+            <td><%= audio_tag "Lovin' You.m4a", controls: true%></td>
+        </tr>
+        <tr>
+            <td><p>Sail</p></td>
+            <td><p>AWOLNation</p></td>
+            <td><%= audio_tag "Sail .mp3", controls: true%></td>
+        </tr> 
+        <tr>
+            <td><p>Is This Love</p></td>
+            <td><p>Bob Marley</p></td>
+            <td><%= audio_tag "Is This Love.m4a", controls: true%></td>
+        </tr>
+        <tr>
+            <td><p>Parker's Mood</p></td>
+            <td><p>Charlie Parker</p></td>
+            <td><%= audio_tag "CHARLIE PARKER - Parker's mood.mp3", controls: true%></td>
+        </tr>
+        <tr>
+            <td><p>Come and Talk to Me (Remix) </p></td>
+            <td><p>Jodeci</p></td>
+            <td><%= audio_tag "Come and Talk To Me (remix).mp3", controls: true%></td>
+        </tr>    
+        <tr>
+            <td><p>Don't Think I'm Not</p></td>
+            <td><p>Kandi</p></td>
+            <td><%= audio_tag "Dont Think Im Not Lp Version.m4a", controls: true%></td>
+        </tr>  
+        <tr>
+            <td><p>Too Much Sauce</p></td>
+            <td><p>Future ft. Lil Uzi Vert</p></td>
+            <td><%= audio_tag "Future - Too Much Sauce ft. Lil Uzi Vert (Project E.T. Esco Terrestrial)", controls: true%></td>
+        </tr>
+         <tr>
+            <td><p>Mask Off</p></td>
+            <td><p>Future</p></td>
+            <td><%= audio_tag "07 Mask Off.m4a", controls: true%></td>
+        </tr> 
+    </tbody>
 </table>
+
+</div>
+
