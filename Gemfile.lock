@@ -39,8 +39,17 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    audiostream (0.1.12)
+      iconv
+      m3uzi
+      mp3info
+      thor
     autoprefixer-rails (7.1.2.4)
       execjs
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
     bcrypt (3.1.7)
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
@@ -71,6 +80,7 @@ GEM
       activesupport (>= 4.2.0)
     hirb (0.7.3)
     i18n (0.8.6)
+    iconv (1.0.4)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -83,6 +93,7 @@ GEM
       rb-inotify (>= 0.9)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
+    m3uzi (0.5.1)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
@@ -91,6 +102,8 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
     minitest (5.10.3)
+    mp3info (0.8.5)
+      ruby-mp3info (>= 0.8.5)
     multi_json (1.12.1)
     nio4r (1.2.1)
     nokogiri (1.8.0)
@@ -132,6 +145,7 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    ruby-mp3info (0.8.10)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -175,11 +189,14 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  audiostream (~> 0.1.12)
+  aws-s3
   bcrypt (= 3.1.7)
   bootstrap-sass (= 3.3.7)
   byebug

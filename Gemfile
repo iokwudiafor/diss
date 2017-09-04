@@ -11,8 +11,7 @@ gem 'sass-rails', '5.0.6'
 gem 'uglifier', '3.0.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '4.2.1'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.1.1'
@@ -28,7 +27,7 @@ gem 'bcrypt', '3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#Use for bootstrap functionality
+
 gem 'bootstrap-sass', '3.3.7'
 
 #Use for icons
@@ -41,6 +40,9 @@ gem 'hirb', '0.7.3'
 gem 'devise', '4.2.0'
 
 gem 'audiostream', '~> 0.1.12'
+
+
+#gem 'aws-s3', :require => 'aws/s3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
