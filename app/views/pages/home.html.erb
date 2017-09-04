@@ -2,7 +2,5 @@
   <h1>Welcome to SoundzGood</h1>
   <h2> The optimal streaming experience for every type of user!</h2>
   <p> Enjoy the streaming experience and create a profile to share interests with other users.</p>
- <%= link_to new_user_profile_path(user_id: current_user.id) if user_signed_in? do%>
-     Create your profile here!
- <% end %>
+ <%= link_to "Create your profile here!", (new_user_profile_path(user_id: current_user.id) if user_signed_in?), class: 'links' %>
 </div>
