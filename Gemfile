@@ -27,7 +27,8 @@ gem 'bcrypt', '3.1.7'
 # gem 'capistrano-rails', group: :development
 
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
-gem 'aws-s3', '~> 0.6.3'
+gem 'aws-sdk-core'
+gem 'aws-sdk-s3'
 
 gem 'bootstrap-sass', '3.3.7'
 
