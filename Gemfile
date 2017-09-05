@@ -43,7 +43,7 @@ gem 'devise', '4.2.0'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-
+gem 'paperclip'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
