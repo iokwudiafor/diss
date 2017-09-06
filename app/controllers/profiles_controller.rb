@@ -5,9 +5,9 @@ class ProfilesController < ApplicationController
   end
 
     def create
-      # Ensure that we have the user who is filling out form
+      # Make sure user is filling out form
       @user = User.find( params[:user_id] )
-      # Create profile linked to this specific user
+      # Profile linked to user
       @profile = @user.build_profile( profile_params )
       if @profile.save
         flash[:success] = "Profile lit!"
