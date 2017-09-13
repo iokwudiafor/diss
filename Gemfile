@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ##These are the gems or "libraries" that allow for functionality within the application.
 
+###Below are system generated gems for almost any Ruby on Rails application
 
 gem 'rails', '5.0.0'
 # Use Puma as the app server
@@ -23,33 +24,27 @@ gem 'jbuilder', '2.5.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '3.1.7'
 
-#Use for icons
-gem 'font-awesome-sass', '4.6.2'
+######
+###### My addition of gems for use in application #######
 
+##AWS gems to allow for seamless use of AWS in application
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'aws-sdk-core'
 gem 'aws-sdk-s3'
-
+#boostrap gem for responsive design on properly tagged divs
 gem 'bootstrap-sass', '3.3.7'
 
-# Use Hirb gem for better console data presentation
-gem 'hirb', '0.7.3'
 
-# Use Devise for user authentication
+##devise gem is used for user authentication
 gem 'devise', '4.2.0'
-
+##javascript gem for aesthetic features
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-
+##paperclip gem used to help facilitate uploads and downloads
 gem 'paperclip'
 
-
+#When in production do the following
 group :production do
-  # Use the PostgreSQL gem for Heroku production servers
-   gem 'pg', '0.18.4'
-#end
 
+#use ruby version 2.3
 ruby '2.3.0'
- 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end
