@@ -45,6 +45,9 @@ gem 'paperclip'
 #When in production do the following
 group :production do
 
+#PostgreSQL gem for Heroku production servers
+gem 'pg', '0.18.4'
+
 #use ruby version 2.3
 ruby '2.3.0'
 
