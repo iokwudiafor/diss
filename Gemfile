@@ -1,16 +1,15 @@
 source 'https://rubygems.org'
+##These are the gems or "libraries" that allow for functionality within the application.
 
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0'
 # Use Puma as the app server
 gem 'puma', '3.4.0'
-# Use SCSS for stylesheets
+# SCSS for stylesheets
 gem 'sass-rails', '5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.0.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.2.1'
+
 
 
 
