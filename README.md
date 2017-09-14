@@ -1,4 +1,5 @@
 # README
 
-[Diss_Project] Streaming Service run on Ruby on Rails
+[Diss_Project] Streaming Service created on Ruby on Rails
+Hosted on heroku at soundzgood.herokuapp.com
 
