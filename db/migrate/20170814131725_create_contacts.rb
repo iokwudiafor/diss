@@ -1,3 +1,4 @@
+#Migration file for support tickets
 class CreateContacts < ActiveRecord::Migration[5.0]
   def change
     create_table :contacts do |t|
