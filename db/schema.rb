@@ -1,4 +1,4 @@
-
+#schema for application db
 
 ActiveRecord::Schema.define(version: 20170830220541) do
 
