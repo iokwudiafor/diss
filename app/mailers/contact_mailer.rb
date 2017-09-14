@@ -1,3 +1,4 @@
+#the email sent from the contact form uses the fields name, email(email address), and abody of the message
 class ContactMailer < ActionMailer::Base
   default to: 'io270@bath.ac.uk'
   def contact_email(name, email, body)
