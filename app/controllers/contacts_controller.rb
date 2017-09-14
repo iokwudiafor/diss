@@ -1,15 +1,18 @@
+#Contact form controls to assign fields and send message
 class ContactsController < ApplicationController
   def new
    @contact = Contact.new
   end
   def create
     @contact = Contact.new(contact_params)
+    #assign these fields the following parameters from the form and send message
     if @contact.save
         name = params[:contact][:name]
         email = params[:contact][:email]
         body = params[:contact][:comments]
         ContactMailer.contact_email(name, email, body).deliver
-       flash[:success] = "Message sent."
+      #if message is successful send back message sent and redirect to contact form 
+      flash[:success] = "Message sent."
        redirect_to new_contact_path
     else
        flash[:danger] = @contact.errors.full_messages.join(", ")
