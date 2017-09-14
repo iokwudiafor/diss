@@ -34,7 +34,6 @@ gem 'aws-sdk-s3'
 #boostrap gem for responsive design on properly tagged divs
 gem 'bootstrap-sass', '3.3.7'
 
-gem 'font-awesome-sass', '4.6.2'
 
 ##devise gem is used for user authentication
 gem 'devise', '4.2.0'
