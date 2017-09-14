@@ -7,25 +7,27 @@
 
 
 
-// Typography Styles
+// Heading Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
+// Paragraph Styles
 p{
   font-size: 18px;
   font-weight: 500;
 }
-
+// Table Styles
 tbody{
   overflow: auto;
   height:10px;
 }
-// Background Gradient
+// Background Style for home page
 .navbar, .home-callout {
   background: #2E8B57; 
   
 }
+// Link Styling
 .links{
   color:white;
   size: 16px;
@@ -33,7 +35,7 @@ tbody{
   text-decoration: underline;
 }
 
-// Nav Styles
+//Navigation bar styling
 .navbar {
   border: none;
 }
